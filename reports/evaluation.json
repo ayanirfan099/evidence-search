@@ -1,0 +1,7 @@
+{
+  "queries": 12,
+  "hit_rate_at_3": 1.0,
+  "mrr_at_3": 1.0,
+  "chunks": 32,
+  "warning": "Hand-authored queries against fictional documentation. Measures retrieval, not answer correctness."
+}
