@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Where do I download invoices?",
+    "relevant_source": "billing.md"
+  },
+  {
+    "query": "How long do password reset links last?",
+    "relevant_source": "account-access.md"
+  },
+  {
+    "query": "What should I do after receiving HTTP 429?",
+    "relevant_source": "api-limits.md"
+  },
+  {
+    "query": "How do I export reports as CSV?",
+    "relevant_source": "data-export.md"
+  },
+  {
+    "query": "Can permanently deleted records be restored?",
+    "relevant_source": "retention.md"
+  },
+  {
+    "query": "Who can invite members to a workspace?",
+    "relevant_source": "team-permissions.md"
+  },
+  {
+    "query": "What should an outage ticket include?",
+    "relevant_source": "incident-response.md"
+  },
+  {
+    "query": "How long is the introductory webinar?",
+    "relevant_source": "onboarding.md"
+  },
+  {
+    "query": "What happens when a team invitation expires?",
+    "relevant_source": "team-permissions.md"
+  },
+  {
+    "query": "How long until an approved refund arrives?",
+    "relevant_source": "billing.md"
+  },
+  {
+    "query": "Where can I rotate API tokens?",
+    "relevant_source": "api-limits.md"
+  },
+  {
+    "query": "How do I recover authentication without my phone?",
+    "relevant_source": "account-access.md"
+  }
+]
