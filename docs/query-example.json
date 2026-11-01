@@ -1,0 +1,17 @@
+{
+  "query": "What should I do after receiving HTTP 429?",
+  "results": [
+    {
+      "source": "api-limits.md",
+      "start_line": 4,
+      "end_line": 7,
+      "citation": "api-limits.md:L4-L7",
+      "excerpt": "## Rate limits\nThe standard API limit is 120 requests per minute for each workspace.\nRequests above the limit receive HTTP 429. Respect the Retry-After response header.\nUse exponential backoff with jitter when retrying rate-limited requests.",
+      "score": 0.0327869,
+      "bm25": 4.92563,
+      "tfidf_cosine": 0.25441
+    }
+  ],
+  "has_matches": true,
+  "note": "Ranked source excerpts, not a generated answer. Scores are not confidence probabilities."
+}
