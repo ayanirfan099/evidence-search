@@ -1,4 +1,4 @@
-# Evidence Search
+# Evidence Search — Retrieval with Exact Citations
 
 A local document-retrieval engine that returns **ranked excerpts with exact file-and-line citations**. It combines BM25 and word/bigram TF-IDF rankings using reciprocal rank fusion.
 
