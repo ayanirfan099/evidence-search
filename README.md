@@ -4,6 +4,15 @@ A local document-retrieval engine that returns **ranked excerpts with exact file
 
 This is the retrieval component of a potential RAG system. It has **no LLM, embeddings or generated answers**. Keeping source text visible makes ranking errors and unsupported questions easier to inspect.
 
+[![CI](https://github.com/ayanirfan099/evidence-search/actions/workflows/tests.yml/badge.svg)](https://github.com/ayanirfan099/evidence-search/actions/workflows/tests.yml)
+
+
+## Executed example
+
+For `python app.py search --query "What should I do after receiving HTTP 429?"`, the bundled fictional corpus returns `api-limits.md:L4-L7`, including: “Requests above the limit receive HTTP 429. Respect the Retry-After response header.”
+
+See the [actual JSON transcript](docs/query-example.json). The four-line citation can be checked directly against `data/docs/api-limits.md`; it is source retrieval, not a generated answer.
+
 ## How it works
 
 1. Read UTF-8 `.md` and `.txt` documents (maximum 1 MiB each; external/symlinked files are rejected).
@@ -70,4 +79,4 @@ python app.py evaluate
 
 The dependencies are pinned to the versions tested for this project, not advertised as the newest versions. After the first dependency installation, the bundled examples run offline. No paid API keys or external model downloads are needed.
 
-The lightweight HTTP server is for local demonstrations. It binds to localhost, accepts JSON only, limits request size and does not log request bodies. Authentication, production serving, rate limiting and operational monitoring must be added before public deployment. The included GitHub Actions workflow runs tests and evaluation when pushed to a repository; that remote workflow has not run yet.
+The lightweight HTTP server is for local demonstrations. It binds to localhost, accepts JSON only, limits request size and does not log request bodies. Authentication, production serving, rate limiting and operational monitoring must be added before public deployment. The included GitHub Actions workflow runs tests and evaluation when pushed to a repository; check the linked Actions badge for current remote status.
